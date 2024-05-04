@@ -1,11 +1,11 @@
 import "./page.css";
-import Forms from "../../src/Forms/Forms.jsx"; // Import path relative to the current directory
+import Form from "@/src/Form/form.jsx";
 
 export default function Booking() {
   return (
     <>
-      <Forms />
-      <h1>Booking</h1>;
+      <h1 className="booking-title">Design Booking</h1>
+      <Form />
     </>
   );
 }

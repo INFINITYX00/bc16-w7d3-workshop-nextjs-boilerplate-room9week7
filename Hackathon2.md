@@ -1,6 +1,15 @@
-
-
 As a user when I submit the form it should show me that it is submitting.
+
+Add onSubmit={handleSubmit}> to the form
+Create a function called handleSubmit
+
+Maybe give your fancy new initial state object a property called { loading: false }.
+
+Then create a new action called "SUBMIT_STARTED". When the reducer receives an action.type matching that you change the loading property to true and return a new state.
+
+Now make your component use that new state property to show/hide different button text.
+
+
 
 As a user I should not be able to submit again while it is submitting.
 
